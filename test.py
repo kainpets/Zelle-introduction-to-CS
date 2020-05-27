@@ -1,21 +1,20 @@
-# c03ex07.py
-#    Calculates the distance between two points
+# c03ex09.py
+#    Area of triangle using Heron's formula
 
 import math
 
 def main():
-    print("This program calculates the distance between two points.")
+    print("This program calculates the are of a triangle.")
     print()
 
-    x1 = float(input("Enter the x for the first point: "))
-    y1 = float(input("Enter the y for the first point: "))
-    print()
-    x2 = float(input("Enter the x for the second point: "))
-    y2 = float(input("Enter the y for the second point: "))
+    a = float(input("Enter the length of side a: "))
+    b = float(input("Enter the length of side b: "))
+    c = float(input("Enter the length of side c: "))
     
-    distance = math.sqrt((x2-x1)**2 + (y2-y1)**2)
+    s = (a+b+c)/2
+    area = math.sqrt(s*(s-a)*(s-b)*(s-c))
 
     print()
-    print("The distance between the points is", distance)
+    print("The area is", area, "square units.")
 
 main()

@@ -1,10 +1,9 @@
 import math
 
-x1 = float(input("Enter the x for the first point: "))
-y1 = float(input("Enter the y for the first point: "))
-x2 = float(input("Enter the x for the second point: "))
-y2 = float(input("Enter the y for the second point: "))
-    
-distance = math.sqrt(((x2 - x1)**2) + ((y2 - y1)**2))
+year = int(input("Enter a four digit year: "))
 
-print("The disatnce is: ", distance)
+C = year // 100
+
+epact = (8+(C//4)-C+((8*C+13)//25)+11*(year%19))%30
+
+print("The epact is: ", epact)
