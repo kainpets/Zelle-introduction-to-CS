@@ -1,11 +1,8 @@
 import math
 
-hydrogen = float(input("Enter the number of hydrogen atoms: "))
-carbon = float(input("Enter the number of carbon atoms: "))
-oxygen = float(input("Enter the number of oxygen atoms: "))
+time = float(input("Enter the between seeing the lightening and hearing it (in seconds): "))
 
-hydrogen = 1.00794 * hydrogen
-carbon = 12.0107 * carbon
-oxygen = 15.9994 * oxygen
+speed = 1100 * time
+miles = speed / 5280
 
-print("The molecular weight of this comopund is: ", hydrogen + carbon + oxygen, "grams per mole")
+print("The lightening is: ", miles, "miles away")
