@@ -1,20 +1,37 @@
-# c03ex09.py
-#    Area of triangle using Heron's formula
+# c05ex02.pyw
+#    An archery target.
 
-import math
+from graphics import *
 
 def main():
-    print("This program calculates the are of a triangle.")
-    print()
+    # Create a window
+    win = GraphWin("Archery Target", 400, 400)
+    win.setCoords(-6, -6, 6, 6)
+    win.setBackground("gray")
+    center = Point(0,0)
 
-    a = float(input("Enter the length of side a: "))
-    b = float(input("Enter the length of side b: "))
-    c = float(input("Enter the length of side c: "))
-    
-    s = (a+b+c)/2
-    area = math.sqrt(s*(s-a)*(s-b)*(s-c))
+    c1 = Circle(center, 5)
+    c1.setFill("white")
+    c1.draw(win)
 
-    print()
-    print("The area is", area, "square units.")
+    c2 = Circle(center, 4)
+    c2.setFill("black")
+    c2.draw(win)
+
+    c3 = Circle(center, 3)
+    c3.setFill("blue")
+    c3.draw(win)
+
+    c4 = Circle(center, 2)
+    c4.setFill("red")
+    c4.draw(win)
+
+    c5 = Circle(center, 1)
+    c5.setFill("yellow")
+    c5.draw(win)
+
+    win.getMouse()
+    win.close()
+
 
 main()
