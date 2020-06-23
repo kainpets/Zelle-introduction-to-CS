@@ -6,18 +6,14 @@ def main():
     alphabet = "abcedghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     newMessage = ""
 
-    # get the letter of each word from message
-    letter = "".join(message.split())
-
-    for char in letter:
+    for char in message:
         # find the position of the letter in the alphabet
         position = alphabet.find(char)
         # add the key value to the position
-        newPosition = position + key
+        newPosition = (position + key) % len(alphabet)
         # assign the encrypted/decrypted message to a variable
         newMessage = newMessage + alphabet[newPosition]
 
-        
     print("Your encrypted/ decrypted message is: ", newMessage)
 
 main()
