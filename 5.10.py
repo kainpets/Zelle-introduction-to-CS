@@ -1,13 +1,17 @@
 def main():
     # program to count the average word length in a sentence entered by
     #   the user
-    print("Program to count the number of words in a sentence")
+    print("Program to count the average length of words in a sentence")
     sentence = input("Your sentence: ")
-    total = 0
+    letters = 0
+    words = 0
 
-    # count the occurence of spaces in sentence
-    total = total + sentence.count(" ") + 1
+    for i in sentence.split():
+        letters = letters + len(i)
+        words = words + 1
+
+    average = letters/words
     
-    print("The number of words in your sentence is: ", total)  
+    print("The average word length in your sentence is: ", average)  
     
 main()
