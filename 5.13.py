@@ -9,10 +9,13 @@ def main():
     # open the files
     bankData = open(infileName, "r")
     results = open(outfileName, "w")
-    
-    principal = float(input("Enter the intial principal: "))
+
+    # process variables input by the user into the file bankData
+    for line in bankData:
+        
+    """principal = float(input("Enter the intial principal: "))
     apr = float(input("Enter the annual interest rate (in decimal): "))
-    years = int(input("Enter the number of years of investment: "))
+    years = int(input("Enter the number of years of investment: "))"""
 
 
 
