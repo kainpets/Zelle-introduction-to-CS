@@ -5,7 +5,8 @@ def main():
     num2 = float(input("Enter a number beween 0 and 1: "))
     iterations = int(input("Enter the number of iterations: "))
     
-    print("index \t" + str(num1) + "\t" + str(num2))
+    print("index \t" + " "+ str(num1) + "\t\t"  + " " + str(num2))
+    print("------------------------------")
     
     for i in range(iterations):
         num1 = 3.9 * num1 * (1 - num1)
