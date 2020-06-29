@@ -17,8 +17,6 @@ def main():
     apr = float(input("Enter the annual interest rate (in decimal): "))
     years = int(input("Enter the number of years of investment: "))"""
 
-
-
     print("Year\tValue")
     print("--------------------")
     
