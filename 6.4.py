@@ -1,16 +1,16 @@
-from math import *
+# program to count the sum of n natural numbers
 
-def sphereArea(radius):
-    area = 4 * pi * radius **2
-    return(area)
+def sumN(n):
+    n = n*(n+1)/2
+    return n
 
-def sphereVolume(radius):
-    volume = 4/3 * pi * radius **3
-    return(volume)
-
-
+def sumNCubes(n):
+    n = (n*(n+1)/2)**2
+    return n
+    
 def main():
-    radius = int(input("Enter radius: "))
-    print("Area: %0.2f" % (sphereArea(radius)), "volume: %0.2f" % (sphereVolume(radius)))
+    n = int(input("Enter a natural number: "))
+    print("The sum of first %d numbers is %d."% (n, sumN(n)))
+    print("The sum of the cubes of the first %d numbers is %d."% (n, sumNCubes(n)))
 
 main()
