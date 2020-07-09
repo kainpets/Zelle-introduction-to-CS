@@ -43,7 +43,7 @@ def main():
     d2 = distance(p2,p3)
     d3 = distance(p3,p1)
     perim = distance(p1,p2) + distance(p2,p3) + distance(p3,p1)
-    message.setText(""" Perimeter is: %0.2f\nThe area is: %0.2f"""
+    message.setText("""Perimeter is: %0.2f\nThe area is: %0.2f"""
                     % (perim, triangleArea(d1, d2, d3)))
 
     # Wait for another click to exit
