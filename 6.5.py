@@ -12,5 +12,6 @@ def costSquareInch(diameter, price):
 def main():
     print("The area of the pizza is %0.4f" % (areaOfPizza(diameter)))
     print("The cost of square unit of pizza is %0.4f" % (costSquareInch(diameter, price)))
+    input("Press enter to quit")
     
 main()
