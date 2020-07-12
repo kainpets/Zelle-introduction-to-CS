@@ -2,13 +2,12 @@
 #   test result using functions
 
 
-def grade(score, result):
+def grade(score):
     result = "FFFFFFDCBAA"[score//10]
     return result
 
 def main():
     score = int(input("Your score: "))
-    result = 0
     print("Your grade: ", grade(score))
 
 main()
