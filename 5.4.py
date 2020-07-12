@@ -1,3 +1,5 @@
+# Program to create acronyms from user provided strings
+
 def main():
     words = input("Enter words to be acronymed: ")
     acronym = ""
