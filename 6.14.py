@@ -20,10 +20,11 @@ def sumList(nums):
     for i in nums:
         count += i
     return count
+# The function doesn't work but neither does the code answer given by the author
+#   The cause might be the fact the input file isn't specified
 
 def main():
     file = open("listOfSquares", "r").readlines()
-    
     print(sumList(squareEach(toNumbers(file))))
  
 main()
