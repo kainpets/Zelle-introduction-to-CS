@@ -1,17 +1,17 @@
-# Program to grade exam results
+# Program to calculate results of 100 points quizes
 
 def main():
-	score = int(input("Enter your exam score (0-5): "))
+	score = int(input("Enter your exam score: "))
 
-	if score == 5:
-		print("You scored an A")
-	elif score == 4:
-		print("You scored a B")
-	elif score == 3:
-		print("You scored a C")
-	elif score < 2:
-		print("You scored an F")
+	if score < 60:
+		print("Your grade is an F")
+	elif score < 70:
+		print("Your grade is a D")
+	elif score < 80:
+		print("Your grade is a C")
+	elif score < 90:
+		print("Your grade is a B")
 	else:
-		print("Wrong input.")
+		print("Your grade is an A")
 
 main()
