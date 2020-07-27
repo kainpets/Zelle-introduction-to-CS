@@ -1,18 +1,21 @@
-# program: maxn.py
-# 	Finds the maxium of a series of numbers
+a, b, c = eval(input('Enter three numbers: '))
 
-def main():
-	n = int(input("How many numbers are there? "))
-
-	# Set max to be the first value
-	maxval = float(input("Enter a number >> "))
-
-	# Now compare the n-1 succesive values
-	for i in range(n-1):
-		x = float(input("Enter a number >> "))
-		if x > maxval:
-			maxval = x
-
-	print("The largest value is", maxval)
-
-main()
+if a > b:
+	if b > c:
+		print("Spam Please!")
+	else:
+		print("It's a late parrot!")
+elif b > c:
+	print("Cheese Shoppe")
+	if a >= c:
+		print("Cheddar")
+	elif a < b:
+		print("Gouda")
+	elif c == b:
+		print("Swiss")
+else:
+	print("Trees")
+	if a == b:
+		print("Chestnut")
+	else:
+		print("Larch")
