@@ -9,9 +9,9 @@ def main():
     bmi = (720 * weight) / height**2
 
     print("Your BMI is", bmi)
-    if bmi >= 19:
+    if bmi < 19:
         print("That's on the low side.")
-    elif bmi < 25:
+    elif bmi <= 25:
         print("That's in the healthy range.")
     else:
         print("That's on the high side.")
