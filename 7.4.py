@@ -1,15 +1,16 @@
-# Program to calculate class standing from the number of credits earned
+# Program to calculate the Body Mass Index
 
 def main():
-	credits = int(input("Enter the number of your credits: "))
+	weight = float(input("Enter your weight in pounds: "))
+	height = float(input("Enter your height in inches: "))
+	bmi = round(weight * 720 / height**2, 1)
 
-	if credits < 7:
-		print("You're a Freshman")
-	elif credits >= 7:
-		print("You're a Sophomore")
-	elif credits >= 16:
-		print("You're a Junior")
-	elif credits >= 26:
-		print("You're a Senior")
+	print("Your BMI is: ", bmi)
+	if bmi <= 25:
+		print("That's healthy!")
+	elif bmi < 19:
+		print("Watch out! That's unhealthy")
+	else:
+		print("Watch out! That's unhealthy")
 
 main()
