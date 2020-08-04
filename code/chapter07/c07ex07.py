@@ -31,6 +31,7 @@ def main():
 
     pay = 2.50 * primeHours + 1.75 * extraHours
     print("Total payment due: ${0:0.2f}".format(pay))
+    input()
 
 if __name__ == '__main__':
     main()

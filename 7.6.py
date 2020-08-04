@@ -1,16 +1,17 @@
-# Program to calculate the speeding ticket policy in Podunksville
+# Program to calculate the babysitter's wage
 
 def main():
-	limit = int(input("What was the speed limit? "))
-	speed = int(input("Enter the speed you were going at: "))
-	fine = 50
+	hour_start = float(input("Enter the hour babysitting begun: "))
+	minute_start = float(input("Enter the minute babysitting begun: "))
+	hour_end = float(input("Enter the hour babysitting ended: "))
+	minute_end = float(input("Enter the minute babysitting ended: "))
 
-	if speed >= limit:
-		fine = fine + (speed-limit) * 5
-		if speed >= 90:
-			fine + 200
-		print("You'll have to pay", fine)
+	if hour_start or hour_end < 21:
+		time  =  (hour_end * 60 + minute_end) - (hour_start * 60 + minute_start)
+		payment = time * 2,5 / 60
 	else:
-		print("You don't have to pay.")
+		payment = (hour_end * 60 + minute_end) - (hour_start * 60 + minute_start) 
+	print(payment)
 
 main()
+
