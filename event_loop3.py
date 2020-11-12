@@ -1,4 +1,4 @@
-# event_loop2.py --- color-changing window
+# event_loop3.py --- color-changing window
 
 from graphics import *
 
