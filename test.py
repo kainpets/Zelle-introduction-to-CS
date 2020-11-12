@@ -1,21 +1,8 @@
-a, b, c = eval(input('Enter three numbers: '))
-
-if a > b:
-	if b > c:
-		print("Spam Please!")
-	else:
-		print("It's a late parrot!")
-elif b > c:
-	print("Cheese Shoppe")
-	if a >= c:
-		print("Cheddar")
-	elif a < b:
-		print("Gouda")
-	elif c == b:
-		print("Swiss")
-else:
-	print("Trees")
-	if a == b:
-		print("Chestnut")
-	else:
-		print("Larch")
+def is_prime(n):
+    for i in range(2,n):
+        if n % i == 0:
+            return False
+        else:
+            return True 
+    
+print(is_prime(2))

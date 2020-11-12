@@ -13,4 +13,3 @@ def main():
     print("The lightning is approximately", round(miles,1), "miles away.")
 
 main()
-hey = input("hey")

@@ -13,7 +13,6 @@ def main():
     cost = price /area
     print() 
     print("The cost is", cost, "cents per square inch.")
-    hey = input("Hey")
 
 main()
 

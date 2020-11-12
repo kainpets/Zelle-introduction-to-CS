@@ -18,4 +18,3 @@ def main():
     print("Total due:     ", coffeeCost + shipping)
 
 main()
-hey = input("Stop")

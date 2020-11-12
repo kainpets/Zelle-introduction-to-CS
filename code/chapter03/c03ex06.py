@@ -15,5 +15,5 @@ def main():
 
     print()
     print("The slope of the line is", slope)
-	
+
 main()
